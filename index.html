@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>黛兒塔羅占卜</title>
+  <title>塔羅占卜</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
@@ -56,7 +56,7 @@
   </div>
 
   <!-- Header -->
-  <div class="header"><h1>✦ 黛兒塔羅占卜 ✦</h1></div>
+  <div class="header"><h1>✦ {{ siteName }} ✦</h1></div>
 
   <!-- Tabs -->
   <div class="tabs">
@@ -70,12 +70,13 @@
   <div class="content" v-if="!loading">
     <daily-tab   v-if="tab==='daily'"   :cards="CARDS" :card-exts="cardExts"></daily-tab>
     <draw-tab    v-if="tab==='draw'"    :cards="CARDS" :card-exts="cardExts"></draw-tab>
-    <spread-tab  v-if="tab==='spread'"  :cards="CARDS" :card-exts="cardExts" :spreads="SPREADS"></spread-tab>
+    <spread-tab  v-if="tab==='spread'"  :cards="CARDS" :card-exts="cardExts" :spreads="SPREADS" :tutorial-mode="tutorialMode"></spread-tab>
     <gallery-tab v-if="galleryMounted" v-show="tab==='gallery'" :cards="CARDS" :card-exts="cardExts"></gallery-tab>
   </div>
 
 </div>
 
+<script src="config.js"></script>
 <script src="cards-data.js"></script>
 <script src="tabs/gallery.js"></script>
 <script src="tabs/draw.js"></script>

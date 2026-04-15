@@ -1,6 +1,6 @@
 const SpreadTab = {
   name: 'SpreadTab',
-  props: { cards: Array, cardExts: Object, spreads: Array },
+  props: { cards: Array, cardExts: Object, spreads: Array, tutorialMode: Boolean },
   setup(props) {
     const { ref, computed, watch, nextTick, onMounted, onUnmounted } = Vue
 
@@ -54,16 +54,18 @@ const SpreadTab = {
         title: '牌位區',
         text: '牌位依序自動填入，點牌可翻面，翻開後再點可切換正逆位。牌與牌之間也可以拖曳互換位置。',
       },
-      {
-        sel: '.btn-guide', placement: 'left',
-        title: '塔羅教學',
-        text: '點擊「開啟教學」，畫面下方會分成左右兩欄，左側顯示塔羅教學文件，方便你一邊查閱牌義、一邊進行占卜。',
-      },
-      {
-        sel: '.guide-divider', placement: 'right',
-        title: '調整教學面板寬度',
-        text: '開啟教學後，左右兩欄之間會出現一條分隔線。用滑鼠拖曳分隔線，可以自由調整教學文件與牌陣的顯示比例。',
-      },
+      ...props.tutorialMode ? [
+        {
+          sel: '.btn-guide', placement: 'left',
+          title: '塔羅教學',
+          text: '點擊「開啟教學」，畫面下方會分成左右兩欄，左側顯示塔羅教學文件，方便你一邊查閱牌義、一邊進行占卜。',
+        },
+        {
+          sel: '.guide-divider', placement: 'right',
+          title: '調整教學面板寬度',
+          text: '開啟教學後，左右兩欄之間會出現一條分隔線。用滑鼠拖曳分隔線，可以自由調整教學文件與牌陣的顯示比例。',
+        },
+      ] : [],
     ]
 
     const showTour         = ref(false)
@@ -667,7 +669,7 @@ const SpreadTab = {
                 ◫ {{ rangeTotalLabel }}
               </button>
               <button class="btn-refresh" @click="resetSpread">↺ 重置牌陣</button>
-              <button class="btn-guide" :class="{ active: showGuide }" @click="toggleGuide">
+              <button v-if="tutorialMode" class="btn-guide" :class="{ active: showGuide }" @click="toggleGuide">
                 § 開啟教學
               </button>
             </div>

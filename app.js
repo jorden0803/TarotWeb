@@ -31,14 +31,16 @@ createApp({
     onMounted(async () => {
       document.title = SITE_CONFIG.siteName
 
-      const allIds  = CARDS.map(c => c.id).concat(['back'])
-      const results = await Promise.all(allIds.map(id => detectExt(id).then(ext => ({ id, ext }))))
+      // 牌卡直接用設定檔的副檔名，只對 back 牌背自動偵測
       const extMap  = {}
       const missing = []
-      results.forEach(({ id, ext }) => {
-        if (ext) extMap[id] = ext
-        else missing.push(id)
-      })
+
+      CARDS.forEach(c => { extMap[c.id] = SITE_CONFIG.cardExt })
+
+      const backExt = await detectExt('back')
+      if (backExt) extMap['back'] = backExt
+      else missing.push('back')
+
       cardExts.value     = extMap
       missingCards.value = missing
       loading.value      = false

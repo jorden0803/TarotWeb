@@ -1,4 +1,4 @@
 const SITE_CONFIG = {
-  siteName: '命語塔羅占卜',
-  tutorialMode: false,
+  siteName: '黛兒塔羅占卜',
+  tutorialMode: true,
 }

@@ -1043,7 +1043,7 @@ body {
   flex: 1;
   display: flex; flex-direction: column;
   align-items: center; justify-content: center;
-  position: relative; overflow: hidden;
+  position: relative; overflow-y: auto;
   background: radial-gradient(ellipse at 50% 55%, #120e2c 0%, #090718 45%, #050410 100%);
 }
 
@@ -1215,3 +1215,42 @@ body {
 .m-zh  { color: #e8d5a3; }
 .m-en  { color: #6b5f80; }
 .missing-footer { padding: 10px 18px; border-top: 1px solid #4a2020; display: flex; justify-content: flex-end; }
+
+/* ════════════════════════════════
+   RESPONSIVE — daily tab
+════════════════════════════════ */
+
+/* 高度偏小：縮小牌與字 */
+@media (max-height: 700px) {
+  .daily-inner        { gap: 10px; padding: 12px 24px; }
+  .daily-date         { font-size: 1.05rem; }
+  .daily-title        { font-size: 1.6rem; }
+  .daily-flip,
+  .daily-placeholder  { width: 128px; height: 222px; }
+  .daily-card-zh      { font-size: 1.6rem; }
+  .daily-card-en,
+  .daily-card-rev     { font-size: 1.05rem; }
+}
+
+/* 高度很小：進一步壓縮，隱藏裝飾線 */
+@media (max-height: 570px) {
+  .daily-inner        { gap: 7px; padding: 8px 24px; }
+  .daily-date         { font-size: 0.95rem; letter-spacing: 0.12em; }
+  .daily-title        { font-size: 1.3rem; letter-spacing: 0.1em; }
+  .daily-rule         { display: none; }
+  .daily-flip,
+  .daily-placeholder  { width: 100px; height: 174px; }
+  .daily-placeholder .ph-symbol { font-size: 2.6rem; }
+  .daily-placeholder .ph-text   { font-size: 0.95rem; }
+  .daily-card-zh      { font-size: 1.3rem; }
+  .daily-card-en,
+  .daily-card-rev     { font-size: 0.92rem; }
+  .daily-card-info    { gap: 2px; min-height: 38px; }
+}
+
+/* 窄螢幕：縮小字間距避免橫向溢出 */
+@media (max-width: 420px) {
+  .daily-title { font-size: 1.45rem; letter-spacing: 0.1em; }
+  .daily-date  { font-size: 1rem; letter-spacing: 0.1em; }
+  .daily-card-zh { letter-spacing: 0.04em; }
+}

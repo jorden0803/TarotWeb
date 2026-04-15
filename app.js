@@ -29,6 +29,8 @@ createApp({
     }
 
     onMounted(async () => {
+      document.title = SITE_CONFIG.siteName
+
       const allIds  = CARDS.map(c => c.id).concat(['back'])
       const results = await Promise.all(allIds.map(id => detectExt(id).then(ext => ({ id, ext }))))
       const extMap  = {}
@@ -43,6 +45,8 @@ createApp({
       if (missing.length > 0) showMissing.value = true
     })
 
-    return { tab, loading, cardExts, missingCards, showMissing, galleryMounted, CARDS, SPREADS }
+    return { tab, loading, cardExts, missingCards, showMissing, galleryMounted, CARDS, SPREADS,
+             siteName: SITE_CONFIG.siteName,
+             tutorialMode: SITE_CONFIG.tutorialMode }
   },
 }).mount('#app')

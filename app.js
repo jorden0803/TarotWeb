@@ -31,20 +31,20 @@ createApp({
     onMounted(async () => {
       document.title = SITE_CONFIG.siteName
 
-      // 牌卡直接用設定檔的副檔名，只對 back 牌背自動偵測
-      const extMap  = {}
-      const missing = []
-
+      // 牌卡直接用設定檔的副檔名，先同步設定讓畫面立即顯示
+      const extMap = {}
       CARDS.forEach(c => { extMap[c.id] = SITE_CONFIG.cardExt })
+      cardExts.value = extMap
+      loading.value  = false
 
+      // 背景偵測 back 牌背副檔名
       const backExt = await detectExt('back')
-      if (backExt) extMap['back'] = backExt
-      else missing.push('back')
-
-      cardExts.value     = extMap
-      missingCards.value = missing
-      loading.value      = false
-      if (missing.length > 0) showMissing.value = true
+      if (backExt) {
+        cardExts.value = { ...cardExts.value, back: backExt }
+      } else {
+        missingCards.value = ['back']
+        showMissing.value  = true
+      }
     })
 
     return { tab, loading, cardExts, missingCards, showMissing, galleryMounted, CARDS, SPREADS,

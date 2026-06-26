@@ -432,6 +432,7 @@ body {
 .guide-divider:hover,
 .spread-lower.is-dragging .guide-divider { background: #C1B6DD; }
 .spread-lower.is-dragging { cursor: col-resize; user-select: none; }
+.spread-lower.is-dragging .guide-panel { pointer-events: none; }
 .guide-panel-hd { padding: 7px 14px; font-family: 'Cinzel', 'Noto Serif TC', 'Georgia', serif; font-size: 1.05rem; color: #C1B6DD; border-bottom: 1px solid #D9D2EA; flex-shrink: 0; }
 .guide-panel iframe { flex: 1; width: 100%; border: none; }
 

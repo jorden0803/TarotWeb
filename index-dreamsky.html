@@ -3,16 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>塔羅占卜</title>
+  <title>塔羅占卜 · 夢幻天空</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Noto+Serif+TC:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="theme-dreamsky.css">
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 <body>
 
-<!-- Global starfield (all tabs) -->
 <div id="global-stars"></div>
 <script>
 ;(function(){
@@ -33,13 +30,11 @@
 
 <div id="app">
 
-  <!-- Loading overlay -->
   <div class="loading-overlay" v-if="loading">
     <div class="spinner"></div>
     <span>讀取牌卡中…</span>
   </div>
 
-  <!-- Missing cards dialog -->
   <div class="missing-overlay" v-if="showMissing">
     <div class="missing-modal">
       <div class="missing-header">⚠ 以下 {{ missingCards.length }} 張牌找不到圖片</div>
@@ -56,10 +51,8 @@
     </div>
   </div>
 
-  <!-- Header -->
   <div class="header"><h1>✦ {{ siteName }} ✦</h1></div>
 
-  <!-- Tabs -->
   <div class="tabs">
     <button class="tab-btn" :class="{active: tab==='daily'}"   @click="tab='daily'">每日運勢</button>
     <button class="tab-btn" :class="{active: tab==='draw'}"    @click="tab='draw'">塔羅占卜</button>
@@ -67,7 +60,6 @@
     <button class="tab-btn" :class="{active: tab==='gallery'}" @click="tab='gallery'">偉特塔羅牌</button>
   </div>
 
-  <!-- Content -->
   <div class="content" v-if="!loading">
     <daily-tab   v-if="tab==='daily'"   :cards="CARDS" :card-exts="cardExts"></daily-tab>
     <draw-tab    v-if="tab==='draw'"    :cards="CARDS" :card-exts="cardExts"></draw-tab>

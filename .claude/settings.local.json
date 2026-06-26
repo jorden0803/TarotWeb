@@ -2,7 +2,12 @@
   "permissions": {
     "allow": [
       "Bash(python3 -c \" import sys, json lines = sys.stdin.readlines\\(\\) for line in lines[-30:]: try: d = json.loads\\(line\\) role = d.get\\('role',''\\) content = d.get\\('content',''\\) if isinstance\\(content, list\\): for c in content: if isinstance\\(c, dict\\) and c.get\\('type'\\) == 'text': print\\(f'[{role}]: {c[\\\\\"text\\\\\"][:300]}'\\) elif isinstance\\(content, str\\): print\\(f'[{role}]: {content[:300]}'\\) except: pass \")",
-      "Bash(python3:*)"
+      "Bash(python3:*)",
+      "Bash(ls /mnt/c/Project/TarotWeb/cards/back*)",
+      "WebSearch",
+      "Bash(npx skills *)",
+      "Bash(mkdir -p /tmp/claude-1000/-mnt-c-Project-TarotWeb/e1f16de5-6847-4372-8125-9c430aea534a/scratchpad)",
+      "Bash(npm install *)"
     ]
   }
 }

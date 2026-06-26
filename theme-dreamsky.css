@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Cinzel+Decorative:wght@400;700&family=Noto+Serif+TC:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Noto+Serif+TC:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,700&display=swap');
 
 /*
   夢幻天空 色系
@@ -51,7 +51,8 @@ body {
   background: #E5C1C5;
 }
 .header h1 {
-  font-family: 'Cinzel Decorative', serif;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
   font-size: 1.95rem;
   color: #6ECEDA;
   letter-spacing: 0.22em;
@@ -75,7 +76,7 @@ body {
   margin-bottom: -1px;
   color: #B0B8C4;
   cursor: pointer;
-  font-family: 'Cinzel', 'Georgia', serif;
+  font-family: 'Cinzel', 'Noto Serif TC', 'Georgia', serif;
   font-size: 1.23rem;
   letter-spacing: 0.1em;
   transition: color 0.2s, border-color 0.2s;
@@ -92,7 +93,7 @@ body {
    SHARED UTILITIES
 ════════════════════════════════ */
 .section-title {
-  font-family: 'Cinzel', serif;
+  font-family: 'Cinzel', 'Noto Serif TC', 'Georgia', serif;
   font-size: 1.17rem;
   color: #6ECEDA;
   margin: 14px 0 8px;
@@ -107,7 +108,7 @@ body {
   border: 1px solid #6ECEDA;
   color: #6ECEDA;
   cursor: pointer;
-  font-family: 'Cinzel', serif;
+  font-family: 'Cinzel', 'Noto Serif TC', 'Georgia', serif;
   font-size: 1.23rem;
   border-radius: 5px;
   letter-spacing: 0.06em;
@@ -122,7 +123,7 @@ body {
   border: 1px solid #C3E2DD;
   color: #9AAABF;
   cursor: pointer;
-  font-family: 'Georgia', serif;
+  font-family: 'Noto Serif TC', 'Georgia', serif;
   font-size: 1.2rem;
   border-radius: 4px;
   transition: border-color 0.2s, color 0.2s;
@@ -198,7 +199,7 @@ body {
 .btn-refresh, .btn-picker {
   padding: 7px 16px; background: #F2EEE5;
   border: 1px solid #6ECEDA; color: #6ECEDA;
-  cursor: pointer; font-family: 'Georgia', serif;
+  cursor: pointer; font-family: 'Noto Serif TC', 'Georgia', serif;
   font-size: 1.2rem; border-radius: 4px;
   transition: background 0.2s, border-color 0.2s; white-space: nowrap;
 }
@@ -208,7 +209,7 @@ body {
 .btn-range {
   padding: 7px 16px; background: #EDE8E0;
   border: 1px solid #C3E2DD; color: #9AAABF;
-  cursor: pointer; font-family: 'Georgia', serif;
+  cursor: pointer; font-family: 'Noto Serif TC', 'Georgia', serif;
   font-size: 1.2rem; border-radius: 4px;
   transition: background 0.2s, border-color 0.2s, color 0.2s; white-space: nowrap;
 }
@@ -220,7 +221,7 @@ body {
   padding: 7px 10px; background: #F2EEE5;
   border: 1px solid #6ECEDA; border-radius: 5px;
   color: #6ECEDA; cursor: pointer;
-  font-family: 'Cinzel', serif; font-size: 0.9rem;
+  font-family: 'Cinzel', 'Noto Serif TC', 'Georgia', serif; font-size: 0.9rem;
   letter-spacing: 0.1em; text-align: center;
   transition: background 0.2s;
 }
@@ -239,7 +240,7 @@ body {
   box-shadow: 0 12px 40px rgba(43,54,83,0.15); overflow: hidden;
 }
 .intro-hd { padding: 18px 24px 14px; border-bottom: 1px solid #C3E2DD; text-align: center; flex-shrink: 0; }
-.intro-name { font-family: 'Cinzel', serif; font-size: 1.45rem; color: #6ECEDA; letter-spacing: 0.12em; }
+.intro-name { font-family: 'Cinzel', 'Noto Serif TC', 'Georgia', serif; font-size: 1.45rem; color: #6ECEDA; letter-spacing: 0.12em; }
 .intro-cats {
   flex-shrink: 0; display: flex; gap: 8px;
   padding: 12px 20px; border-bottom: 1px solid #C3E2DD; background: #EDE8E0;
@@ -259,14 +260,14 @@ body {
 .intro-body .intro-spread-block + .intro-spread-block { margin-top: 16px; }
 .intro-spread-block { border: 1px solid #C3E2DD; border-radius: 8px; overflow: hidden; background: #F2EEE5; }
 .intro-spread-meta { display: flex; align-items: baseline; gap: 8px; padding: 13px 16px 4px; }
-.intro-spread-name { font-family: 'Cinzel', serif; font-size: 1.08rem; color: #6ECEDA; letter-spacing: 0.08em; }
+.intro-spread-name { font-family: 'Cinzel', 'Noto Serif TC', 'Georgia', serif; font-size: 1.08rem; color: #6ECEDA; letter-spacing: 0.08em; }
 .intro-spread-count { font-size: 0.8rem; color: #B0B8C4; }
 .intro-spread-tagline { font-size: 0.88rem; color: #7A8FA0; padding: 0 16px 12px; line-height: 1.5; }
 .intro-pos-list { padding: 10px 16px 14px; display: flex; flex-direction: column; gap: 10px; border-top: 1px solid #C3E2DD; }
 .intro-pos { display: flex; gap: 12px; align-items: flex-start; }
 .intro-pos-num { flex-shrink: 0; width: 24px; height: 24px; border-radius: 50%; border: 1px solid #C3E2DD; color: #9AAABF; font-size: 0.82rem; display: flex; align-items: center; justify-content: center; margin-top: 2px; }
 .intro-pos-info { flex: 1; }
-.intro-pos-label { font-family: 'Cinzel', serif; font-size: 0.95rem; color: #6ECEDA; letter-spacing: 0.05em; margin-bottom: 3px; }
+.intro-pos-label { font-family: 'Cinzel', 'Noto Serif TC', 'Georgia', serif; font-size: 0.95rem; color: #6ECEDA; letter-spacing: 0.05em; margin-bottom: 3px; }
 .intro-pos-desc { font-size: 0.9rem; color: #7A8FA0; line-height: 1.65; }
 .intro-ft { flex-shrink: 0; padding: 14px 24px; border-top: 1px solid #C3E2DD; display: flex; justify-content: flex-end; background: #F2EEE5; }
 
@@ -297,7 +298,7 @@ body {
   padding: 18px 20px; box-shadow: 0 8px 32px rgba(43,54,83,0.15); pointer-events: all;
 }
 .tour-step-label { font-size: 0.72rem; color: #B0B8C4; letter-spacing: 0.12em; margin-bottom: 8px; }
-.tour-tt-title { font-family: 'Cinzel', serif; font-size: 1.08rem; color: #6ECEDA; letter-spacing: 0.08em; margin-bottom: 10px; }
+.tour-tt-title { font-family: 'Cinzel', 'Noto Serif TC', 'Georgia', serif; font-size: 1.08rem; color: #6ECEDA; letter-spacing: 0.08em; margin-bottom: 10px; }
 .tour-tt-text { font-size: 1.1rem; color: #7A8FA0; line-height: 1.72; margin-bottom: 16px; }
 .tour-tt-actions { display: flex; align-items: center; gap: 8px; }
 .tour-skip { background: transparent; border: none; padding: 0; color: #B0B8C4; cursor: pointer; font-size: 0.82rem; transition: color 0.2s; }
@@ -318,7 +319,7 @@ body {
   display: flex; flex-direction: column; box-shadow: 0 12px 40px rgba(43,54,83,0.15);
 }
 .range-modal-hd { padding: 14px 18px 13px; border-bottom: 1px solid #C3E2DD; display: flex; justify-content: space-between; align-items: center; flex-shrink: 0; }
-.rm-title { font-family: 'Cinzel', serif; font-size: 1.1rem; color: #6ECEDA; letter-spacing: 0.12em; }
+.rm-title { font-family: 'Cinzel', 'Noto Serif TC', 'Georgia', serif; font-size: 1.1rem; color: #6ECEDA; letter-spacing: 0.12em; }
 .rm-count { font-size: 0.95rem; color: #9AAABF; }
 .range-modal-body { flex: 1; overflow-y: auto; padding: 10px 14px; background: #F7F4EF; }
 .range-modal-body::-webkit-scrollbar { width: 5px; }
@@ -327,7 +328,7 @@ body {
 .range-modal-ft { padding: 10px 18px; border-top: 1px solid #C3E2DD; display: flex; align-items: center; gap: 10px; flex-shrink: 0; background: #F2EEE5; }
 .btn-range-all, .btn-range-none {
   padding: 6px 16px; background: #F2EEE5; border: 1px solid #6ECEDA;
-  color: #6ECEDA; cursor: pointer; font-family: 'Georgia', serif;
+  color: #6ECEDA; cursor: pointer; font-family: 'Noto Serif TC', 'Georgia', serif;
   font-size: 0.95rem; border-radius: 4px; transition: background 0.2s;
 }
 .btn-range-all:hover  { background: #C3E2DD; color: #2B3653; }
@@ -346,7 +347,7 @@ body {
 .rg-checkbox.partial { border-color: #6ECEDA; color: #6ECEDA; }
 .rg-checkbox.full    { background: #6ECEDA; border-color: #6ECEDA; color: #fff; }
 .rg-label { flex: 1; display: flex; align-items: baseline; gap: 8px; cursor: pointer; min-width: 0; }
-.rg-name { font-family: 'Cinzel', serif; font-size: 1.0rem; color: #9AAABF; }
+.rg-name { font-family: 'Cinzel', 'Noto Serif TC', 'Georgia', serif; font-size: 1.0rem; color: #9AAABF; }
 .rg-group.is-partial .rg-name,
 .rg-group.is-full    .rg-name { color: #2B3653; }
 .rg-count { font-size: 0.88rem; color: #B0B8C4; }
@@ -380,7 +381,7 @@ body {
 .picker-overlay { position: fixed; inset: 0; background: rgba(43,54,83,0.35); z-index: 1000; display: flex; align-items: center; justify-content: center; }
 .picker-modal { background: #F2EEE5; border: 1px solid #C3E2DD; border-radius: 10px; width: 90vw; max-width: 900px; max-height: 82vh; display: flex; flex-direction: column; box-shadow: 0 12px 40px rgba(43,54,83,0.15); }
 .picker-header { padding: 13px 18px; border-bottom: 1px solid #C3E2DD; display: flex; justify-content: space-between; align-items: center; flex-shrink: 0; }
-.picker-header span { color: #6ECEDA; font-size: 1.43rem; font-family: 'Cinzel', serif; letter-spacing: 0.1em; }
+.picker-header span { color: #6ECEDA; font-size: 1.43rem; font-family: 'Cinzel', 'Noto Serif TC', 'Georgia', serif; letter-spacing: 0.1em; }
 .picker-header small { color: #9AAABF; font-size: 1.17rem; }
 .picker-body { flex: 1; overflow-y: auto; padding: 14px; background: #F7F4EF; display: grid; grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); gap: 8px; align-content: start; }
 .picker-body::-webkit-scrollbar { width: 5px; }
@@ -392,10 +393,10 @@ body {
 .picker-card img { width: 62px; height: 107px; object-fit: cover; border-radius: 4px; display: block; }
 .picker-card .p-zh { font-size: 0.96rem; color: #2B3653; text-align: center; }
 .picker-footer { padding: 10px 18px; border-top: 1px solid #C3E2DD; display: flex; justify-content: flex-end; gap: 10px; flex-shrink: 0; background: #F2EEE5; }
-.btn-confirm { padding: 7px 22px; background: #6ECEDA; border: 1px solid #6ECEDA; color: #fff; cursor: pointer; font-family: 'Georgia', serif; font-size: 1.32rem; border-radius: 4px; transition: background 0.2s; }
+.btn-confirm { padding: 7px 22px; background: #6ECEDA; border: 1px solid #6ECEDA; color: #fff; cursor: pointer; font-family: 'Noto Serif TC', 'Georgia', serif; font-size: 1.32rem; border-radius: 4px; transition: background 0.2s; }
 .btn-confirm:hover { background: #5ABFCF; border-color: #5ABFCF; }
 .btn-confirm:disabled { opacity: 0.35; cursor: default; }
-.btn-cancel { padding: 7px 22px; background: transparent; border: 1px solid #C3E2DD; color: #9AAABF; cursor: pointer; font-family: 'Georgia', serif; font-size: 1.32rem; border-radius: 4px; transition: background 0.2s, color 0.2s; }
+.btn-cancel { padding: 7px 22px; background: transparent; border: 1px solid #C3E2DD; color: #9AAABF; cursor: pointer; font-family: 'Noto Serif TC', 'Georgia', serif; font-size: 1.32rem; border-radius: 4px; transition: background 0.2s, color 0.2s; }
 .btn-cancel:hover { background: #C3E2DD; color: #2B3653; }
 
 /* ════════════════════════════════
@@ -405,7 +406,7 @@ body {
 .spread-sidebar { width: 0; overflow: hidden; flex-shrink: 0; transition: width 0.28s cubic-bezier(0.4,0,0.2,1); }
 .spread-sidebar.is-open { width: 214px; }
 .spread-sidebar-inner { width: 214px; height: 100%; display: flex; flex-direction: column; background: #EDE8E0; border-right: 1px solid #C3E2DD; overflow: hidden; }
-.spread-sidebar-hd { padding: 11px 14px 10px; border-bottom: 1px solid #C3E2DD; font-family: 'Cinzel', serif; font-size: 1.02rem; color: #B0B8C4; letter-spacing: 0.26em; text-transform: uppercase; flex-shrink: 0; display: flex; justify-content: space-between; align-items: center; }
+.spread-sidebar-hd { padding: 11px 14px 10px; border-bottom: 1px solid #C3E2DD; font-family: 'Cinzel', 'Noto Serif TC', 'Georgia', serif; font-size: 1.02rem; color: #B0B8C4; letter-spacing: 0.26em; text-transform: uppercase; flex-shrink: 0; display: flex; justify-content: space-between; align-items: center; }
 .sidebar-pin { background: transparent; border: 1px solid transparent; color: #B0B8C4; cursor: pointer; font-size: 1.35rem; line-height: 1; padding: 2px 5px; border-radius: 4px; transition: color 0.2s, border-color 0.2s, background 0.2s; }
 .sidebar-pin:hover  { border-color: #C3E2DD; color: #5A6B88; background: #C3E2DD; }
 .sidebar-pin.pinned { color: #fff; border-color: #6ECEDA; background: #6ECEDA; }
@@ -415,18 +416,18 @@ body {
 .spread-sidebar-item { padding: 9px 11px; border-radius: 5px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 8px; margin-bottom: 2px; transition: background 0.15s; border: 1px solid transparent; }
 .spread-sidebar-item:hover { background: #C3E2DD; }
 .spread-sidebar-item.is-active { background: #C3E2DD; border-color: #6ECEDA; }
-.ssb-name { font-family: 'Cinzel', serif; font-size: 1.2rem; color: #9AAABF; }
+.ssb-name { font-family: 'Cinzel', 'Noto Serif TC', 'Georgia', serif; font-size: 1.2rem; color: #9AAABF; }
 .spread-sidebar-item.is-active .ssb-name { color: #2B3653; }
 .ssb-count { font-size: 0.98rem; color: #B0B8C4; flex-shrink: 0; }
 .spread-sidebar-item.is-active .ssb-count { color: #5A6B88; }
 
 .spread-main { flex: 1; display: flex; flex-direction: column; overflow: hidden; min-width: 0; }
 .spread-main-hd { padding: 9px 14px; border-bottom: 1px solid #C3E2DD; display: flex; align-items: center; gap: 10px; flex-shrink: 0; background: #EDE8E0; }
-.sidebar-toggle { background: transparent; border: 1px solid #C3E2DD; color: #9AAABF; cursor: pointer; font-family: 'Georgia', serif; font-size: 1.17rem; padding: 5px 12px; border-radius: 4px; transition: border-color 0.2s, color 0.2s, background 0.2s; flex-shrink: 0; white-space: nowrap; }
+.sidebar-toggle { background: transparent; border: 1px solid #C3E2DD; color: #9AAABF; cursor: pointer; font-family: 'Noto Serif TC', 'Georgia', serif; font-size: 1.17rem; padding: 5px 12px; border-radius: 4px; transition: border-color 0.2s, color 0.2s, background 0.2s; flex-shrink: 0; white-space: nowrap; }
 .sidebar-toggle:hover            { border-color: #6ECEDA; color: #2B3653; background: #C3E2DD; }
 .sidebar-toggle.is-open         { border-color: #6ECEDA; color: #2B3653; }
 .sidebar-toggle.is-pinned       { border-color: #6ECEDA; color: #fff; background: #6ECEDA; cursor: default; }
-.spread-main-name { font-family: 'Cinzel', serif; font-size: 1.35rem; color: #6ECEDA; letter-spacing: 0.08em; white-space: nowrap; }
+.spread-main-name { font-family: 'Cinzel', 'Noto Serif TC', 'Georgia', serif; font-size: 1.35rem; color: #6ECEDA; letter-spacing: 0.08em; white-space: nowrap; }
 .spread-main-tagline { font-size: 1.08rem; color: #7A8FA0; flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 
 .spread-lower { flex: 1; display: flex; overflow: hidden; min-height: 0; }
@@ -435,10 +436,10 @@ body {
 .guide-divider:hover,
 .spread-lower.is-dragging .guide-divider { background: #6ECEDA; }
 .spread-lower.is-dragging { cursor: col-resize; user-select: none; }
-.guide-panel-hd { padding: 7px 14px; font-family: 'Cinzel', serif; font-size: 1.05rem; color: #6ECEDA; border-bottom: 1px solid #C3E2DD; flex-shrink: 0; }
+.guide-panel-hd { padding: 7px 14px; font-family: 'Cinzel', 'Noto Serif TC', 'Georgia', serif; font-size: 1.05rem; color: #6ECEDA; border-bottom: 1px solid #C3E2DD; flex-shrink: 0; }
 .guide-panel iframe { flex: 1; width: 100%; border: none; }
 
-.btn-guide { padding: 7px 16px; background: #EDE8E0; border: 1px solid #C3E2DD; color: #9AAABF; cursor: pointer; font-family: 'Georgia', serif; font-size: 1.2rem; border-radius: 4px; transition: background 0.2s, border-color 0.2s, color 0.2s; white-space: nowrap; }
+.btn-guide { padding: 7px 16px; background: #EDE8E0; border: 1px solid #C3E2DD; color: #9AAABF; cursor: pointer; font-family: 'Noto Serif TC', 'Georgia', serif; font-size: 1.2rem; border-radius: 4px; transition: background 0.2s, border-color 0.2s, color 0.2s; white-space: nowrap; }
 .btn-guide:hover  { background: #C3E2DD; border-color: #6ECEDA; color: #2B3653; }
 .btn-guide.active { background: #6ECEDA; border-color: #6ECEDA; color: #fff; }
 
@@ -458,7 +459,7 @@ body {
 .spread-slot-box { width: 86px; height: 149px; border: 1.5px dashed #C3E2DD; border-radius: 6px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; background: rgba(242,238,229,0.8); transition: border-color 0.3s, box-shadow 0.3s; }
 .spread-slot.is-next .spread-slot-box { border-color: #6ECEDA; border-style: solid; box-shadow: 0 0 16px rgba(110,206,218,0.3); animation: slot-pulse 2.4s ease-in-out infinite; }
 @keyframes slot-pulse { 0%,100% { box-shadow: 0 0 8px rgba(110,206,218,0.2); } 50% { box-shadow: 0 0 20px rgba(110,206,218,0.45); } }
-.slot-num { font-family: 'Cinzel', serif; font-size: 2.1rem; color: #C3E2DD; line-height: 1; }
+.slot-num { font-family: 'Cinzel', 'Noto Serif TC', 'Georgia', serif; font-size: 2.1rem; color: #C3E2DD; line-height: 1; }
 .spread-slot.is-next .slot-num { color: #6ECEDA; }
 .slot-empty-label { font-size: 0.7rem; color: #B0B8C4; letter-spacing: 0.08em; }
 
@@ -470,7 +471,7 @@ body {
 .sp-flip-front { transform: rotateY(180deg); }
 .sp-flip-front.reversed img { transform: rotate(180deg); }
 
-.spread-slot-label { font-size: 1.17rem; font-family: 'Cinzel', serif; color: #5A6B88; text-align: center; letter-spacing: 0.03em; max-width: 110px; line-height: 1.3; margin-bottom: 2px; }
+.spread-slot-label { font-size: 1.17rem; font-family: 'Cinzel', 'Noto Serif TC', 'Georgia', serif; color: #5A6B88; text-align: center; letter-spacing: 0.03em; max-width: 110px; line-height: 1.3; margin-bottom: 2px; }
 .spread-slot-below { min-height: 46px; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; gap: 3px; padding-top: 4px; cursor: default; }
 .spread-slot-below.is-filled { cursor: pointer; }
 .spread-slot-name { font-size: 1.11rem; color: #2B3653; text-align: center; transition: color 0.15s; }
@@ -481,7 +482,7 @@ body {
 .spread-descs { padding: 14px 20px 8px; max-width: 600px; margin: 0 auto; width: 100%; display: flex; flex-direction: column; gap: 6px; }
 .spread-desc-item { display: flex; gap: 10px; align-items: flex-start; padding: 8px 12px; background: #F2EEE5; border-left: 2px solid #C3E2DD; border-radius: 0 5px 5px 0; transition: border-color 0.4s; }
 .spread-desc-item.filled { border-left-color: #6ECEDA; }
-.spread-desc-num { font-family: 'Cinzel', serif; font-size: 1.2rem; color: #C3E2DD; min-width: 22px; padding-top: 1px; }
+.spread-desc-num { font-family: 'Cinzel', 'Noto Serif TC', 'Georgia', serif; font-size: 1.2rem; color: #C3E2DD; min-width: 22px; padding-top: 1px; }
 .spread-desc-item.filled .spread-desc-num { color: #6ECEDA; }
 .spread-desc-lbl { font-size: 1.26rem; color: #5A6B88; min-width: 96px; flex-shrink: 0; }
 .spread-desc-txt { font-size: 1.23rem; color: #7A8FA0; line-height: 1.58; }
@@ -497,8 +498,8 @@ body {
   background: #F2EEE5;
 }
 .daily-inner { position: relative; z-index: 5; display: flex; flex-direction: column; align-items: center; gap: 16px; padding: 20px 24px; }
-.daily-date { font-family: 'Cinzel', serif; font-size: 1.23rem; color: #9AAABF; letter-spacing: 0.22em; }
-.daily-title { font-family: 'Cinzel Decorative', serif; font-size: 1.95rem; color: #6ECEDA; letter-spacing: 0.18em; text-align: center; }
+.daily-date { font-family: 'Cinzel', 'Noto Serif TC', 'Georgia', serif; font-size: 1.23rem; color: #9AAABF; letter-spacing: 0.22em; }
+.daily-title { font-family: 'Playfair Display', serif; font-style: italic; font-size: 1.95rem; color: #6ECEDA; letter-spacing: 0.18em; text-align: center; }
 .daily-rule { width: 160px; height: 1px; background: #E5C1C5; }
 .daily-card-area { display: flex; flex-direction: column; align-items: center; gap: 12px; }
 .daily-placeholder {
@@ -524,18 +525,18 @@ body {
 @keyframes card-rise { from { opacity: 0; transform: translateY(12px) scale(0.94); } to { opacity: 1; transform: translateY(0) scale(1); } }
 .daily-card-info { text-align: center; min-height: 52px; display: flex; flex-direction: column; align-items: center; gap: 4px; animation: card-rise 0.4s ease-out; }
 .daily-info-hidden { visibility: hidden; pointer-events: none; }
-.daily-card-zh  { font-family: 'Cinzel','Georgia',serif; font-size: 1.95rem; color: #2B3653; letter-spacing: 0.08em; }
+.daily-card-zh  { font-family: 'Cinzel', 'Noto Serif TC', 'Georgia', serif; font-size: 1.95rem; color: #2B3653; letter-spacing: 0.08em; }
 .daily-card-en  { font-size: 1.23rem; color: #9AAABF; letter-spacing: 0.06em; }
 .daily-card-rev { font-size: 1.26rem; color: #C97070; letter-spacing: 0.06em; }
 .daily-draw-btn {
   padding: 11px 38px;
   background: #6ECEDA; border: 1px solid #6ECEDA; color: #fff;
-  cursor: pointer; font-family: 'Cinzel', serif;
+  cursor: pointer; font-family: 'Cinzel', 'Noto Serif TC', 'Georgia', serif;
   font-size: 1.32rem; border-radius: 6px; letter-spacing: 0.14em;
   transition: background 0.25s;
 }
 .daily-draw-btn:hover { background: #5ABFCF; border-color: #5ABFCF; }
-.daily-redraw-btn { padding: 6px 18px; background: transparent; border: 1px solid #C3E2DD; color: #9AAABF; cursor: pointer; font-family: 'Georgia', serif; font-size: 1.14rem; border-radius: 4px; transition: border-color 0.2s, color 0.2s, background 0.2s; }
+.daily-redraw-btn { padding: 6px 18px; background: transparent; border: 1px solid #C3E2DD; color: #9AAABF; cursor: pointer; font-family: 'Noto Serif TC', 'Georgia', serif; font-size: 1.14rem; border-radius: 4px; transition: border-color 0.2s, color 0.2s, background 0.2s; }
 .daily-redraw-btn:hover { background: #C3E2DD; border-color: #6ECEDA; color: #2B3653; }
 
 /* ════════════════════════════════

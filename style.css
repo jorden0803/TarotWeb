@@ -862,6 +862,7 @@ body {
 .guide-divider:hover,
 .spread-lower.is-dragging .guide-divider { background: #9e8356; }
 .spread-lower.is-dragging { cursor: col-resize; user-select: none; }
+.spread-lower.is-dragging .guide-panel { pointer-events: none; }
 .guide-panel-hd {
   padding: 7px 14px;
   font-family: 'Cinzel', 'Noto Serif TC', 'Georgia', serif;
